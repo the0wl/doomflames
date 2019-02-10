@@ -9,17 +9,35 @@
                 border-spacing: 0;
             }
     
-            td{
+            .canvas td{
                 height: 5px;
                 width: 5px;
                 position: relative;
-                font-family: Open Sans;
                 padding: 0px;
+            }
+
+            .fireData, .debugData{
+                float: left;    
+            }
+            
+            .debugData{
+                margin-left: 10px;
+                font-family: Open Sans;
+            }
+
+            .btn {
+                border: none;
+                background-color: inherit;
+                padding: 0px 2px;
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
             }
         </style>
     </head>
     <body>
-        <div id="fireCanvas">
+        <div id="fireCanvas" class="fireData"></div>
+        <div id="debugInfo" class="debugData"></div>
         <script src="fire.js"/></script>
     </body>
 </html>
